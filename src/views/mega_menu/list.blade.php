@@ -63,23 +63,6 @@
         <script type="text/javascript" src="{{asset('assets/megamenu/jquery-menu-editor.min.js')}}"></script>
         <script>
 
-            $('#btnOut').click(function(){
-            var str = editor.getString();
-            $("#out").text(str);
-
-            $.ajax({
-                        url: "{{route('JSONFILECREATE')}}",
-                        type: "Post",
-                        data: {
-                            'jsonMenu': str,
-                            _token: "{{csrf_token()}}",
-                        },
-                        success: function (data) {
-                            alert(data.success);
-                            window.location.reload();
-                        },
-                    });
-            });
 
 
             $('input[type=file]').change(function () {
