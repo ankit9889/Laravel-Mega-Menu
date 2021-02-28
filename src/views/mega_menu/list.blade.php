@@ -19,10 +19,6 @@
             <div class="row mb-3">
                 <div class="col-md-12">
                     <div class="d-inline-flex">
-                        <select name="" id="" class="form-control">
-                            <option value="">Menu 1</option>
-                            <option value="">Menu 2</option>
-                        </select>
                         <a class="btn btn-sm btn-success text-white ml-4"  href="{{route('NewMenu')}}">Create New Menu</a>
 
                     </div>
@@ -42,7 +38,7 @@
                             @foreach($files as $file)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
-                                <td>{{$file->getFilename()}}</td>
+                                <td>{{RemoveExtenstionFromFile($file->getFilename())}}</td>
                                 <td> <a class="btn btn-sm btn-warning" href="{{route('MenuEdit',$file->getFilename())}}"> <i class="fa fa-eye"></i> </a>
                                     <a class="btn btn-sm btn-danger deleteMenu" type="!#" data-title="{{$file->getFilename()}}"> <i class="fa fa-trash"></i> </a> </td>
                             </tr>
@@ -124,3 +120,4 @@ success: function (data) {
         </script>
     </body>
 </html>
+
