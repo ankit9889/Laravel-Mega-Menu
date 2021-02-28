@@ -1,0 +1,27 @@
+{
+    "name": "mvsofttech/megamenu",
+    "description": "This will meke Mega Menu",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ankit Pal",
+            "email": "ankitpalnov813@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+
+    "autoload": {
+        "psr-4": {
+            "Mvsofttech\\Megamenu\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": [
+            "Mvsofttech\\Megamenu\\MegamenuServiceProvider"
+        ]
+    }
+}
