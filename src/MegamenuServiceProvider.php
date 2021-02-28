@@ -2,6 +2,8 @@
 
 namespace Mvsofttech\Megamenu;
 
+include_once('global.php');
+
 use Illuminate\Support\ServiceProvider;
 
 class MegamenuServiceProvider extends ServiceProvider
