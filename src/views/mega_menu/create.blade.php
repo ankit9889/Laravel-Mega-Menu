@@ -19,10 +19,6 @@
             <div class="row mb-3">
                 <div class="col-md-12">
                     <div class="d-inline-flex">
-                        <select name="" id="" class="form-control">
-                            <option value="">Menu 1</option>
-                            <option value="">Menu 2</option>
-                        </select>
                         <a class="btn btn-sm btn-success text-white ml-4"  href="{{route('MenuList')}}">Menu List</a>
                     </div>
                 </div>
