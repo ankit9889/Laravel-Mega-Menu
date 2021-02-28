@@ -20,8 +20,10 @@
     },
 
     "extra": {
-        "laravel": [
-            "Mvsofttech\\Megamenu\\MegamenuServiceProvider"
-        ]
+        "laravel": {
+            "providers": [
+                "Mvsofttech\\Megamenu\\MegamenuServiceProvider"
+            ]
+        }
     }
 }
