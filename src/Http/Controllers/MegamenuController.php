@@ -43,7 +43,7 @@ class MegamenuController extends Controller
             $path = storage_path('app/upload/menu_json/');
         }
        $files = (isset($path)) ? File::allfiles($path) : array() ;
-       return view('mega_menu.list',compact('files'));
+       return view('mvsoft::mega_menu.list',compact('files'));
     }
 
     public function MenuEdit($name)
